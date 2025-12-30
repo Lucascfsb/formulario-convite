@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* --- Brand --- */
+  --brand-light: #59B2FF;
+  --brand-mid: #3487CF;
+  --brand-dark: #1D6FB6;
+
+  /* --- Accent Colors (Cores de Destaque) --- */
+  --purple: #B259FF;
+  --fuschia: #FF59F9;
+  --pink: #FF598B;
+  --orange: #FF8B59;
+  --yellow: #FFCD59;
+  --lime: #E1FF59;
+  --green: #59FF91;
+  --cyan: #59FFF9;
+  --navy: #6A59FF;
+
+  /* --- Feedback --- */
+  --danger: #FF5959;
+
+  /* --- Input --- */
+  --input-base: #1C1F21;
+  --input-stroke: #363B40;
+  --input-placeholder: #869198;
+
+  /* --- Shape (Forma/Elementos Estruturais) --- */
+  --shape-background: #131516;
+  --shape-body: #212427;
+  --shape-button: #2D3136;
+  --shape-hover: #383D42;
+
+  /* --- Text (Texto) --- */
+  --text-body: #C8CDD0;
+  --text-heading: #F9F9F9;
+  
+  /* --- Tipografia --- */
+
+  /* Famílias de Fontes */
+  --font-family-leckerli: 'Leckerli One', sans-serif;
+  --font-family-baloo: 'Baloo 2', sans-serif;
+  --font-family-open-sans: 'Open Sans', sans-serif;
+
+  /* Estilos de Texto (Weight Size Line-Height Family) */
+  --logo: 400 40px var(--font-family-leckerli);
+  
+  --heading-md: 700 28px var(--font-family-baloo);
+  --heading-sm: 700 18px var(--font-family-baloo);
+
+  /* Para Open Sans, os pesos variam entre Regular (400) e SemiBold (600) */
+  --body-md: 400 16px var(--font-family-open-sans);
+  --body-sm: 400 14px var(--font-family-open-sans);
+  --body-xs: 400 12px var(--font-family-open-sans);
+}
