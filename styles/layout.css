@@ -42,4 +42,11 @@ aside {
   margin: 20px 20px 0px 0px;
   border-radius: 12px; 
   height: 100%;
+  padding: 80px 130px 80px 130px;
+}
+
+aside h1 {
+    font: var(--heading-md);
+    color: var(--text-heading);
+    margin-bottom: 40px;
 }

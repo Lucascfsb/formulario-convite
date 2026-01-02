@@ -1,0 +1,85 @@
+input, textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+
+  font: var(--text);
+  padding: 16px;
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+legend { 
+  font: var(--heading-sm);  
+  color: var(--text-heading);    
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+legend img {
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+  flex-shrink: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-wrapper {
+  margin-bottom: 16px;
+}
+
+.input-wrapper label {
+  margin-bottom: 8px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+  padding: 0.75rem 1rem;
+  font: var(--text);
+  min-height: 120px;
+  resize: vertical;
+}
+
+.toggle-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle-buttons input[type="radio"] {
+  display: none;
+}
+
+.btn-toggle {
+  padding: 8px 16px;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.toggle-buttons input[type="radio"]:checked + .btn-toggle {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
