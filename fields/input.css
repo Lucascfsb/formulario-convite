@@ -133,3 +133,103 @@ textarea {
 .btn-toggle:hover {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+.icon2 {
+  margin-top: 48px;
+}
+
+.event-colors {
+  margin-bottom: 16px;
+}
+
+.color-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 12px;
+}
+
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 6px solid transparent;
+  transition: border-color 0.2s;
+  display: block;
+  outline: 2px solid transparent;
+  border-color: var(--shape-button);
+
+}
+
+.color-circle input[type="radio"] {
+  display: none;
+}
+
+.color-circle input[type="radio"]:checked + .color-circle,
+.color-circle:has(input[type="radio"]:checked) {
+  outline-color: var(--brand-light);
+}
+
+#color-1-label { background-color: var(--brand-light); }
+#color-2-label { background-color: var(--navy); }
+#color-3-label { background-color: var(--purple); }
+#color-4-label { background-color: var(--fuschia); }
+#color-5-label { background-color: var(--pink); }
+#color-6-label { background-color: var(--danger); }
+#color-7-label { background-color: var(--orange); }
+#color-8-label { background-color: var(--yellow); }
+#color-9-label { background-color: var(--lime); }
+#color-10-label { background-color: var(--green); }
+#color-11-label { background-color: var(--cyan); }
+
+.input-themes label{
+  margin-top: 28px;
+  margin-bottom: 16px;
+}
+
+.theme-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+
+.theme-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border-color 0.2s;
+  background-color: var(--shape-button);
+}
+
+.theme-card input[type="radio"] {
+  display: none;
+}
+
+.theme-card img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px 8px 0 0;
+}
+
+.theme-card span {
+  display: block;
+  padding: 12px;
+  color: var(--text-heading);
+  text-align: center;
+  font: var(--body-md);
+  background-color: var(--shape-button);
+}
+
+.theme-card:has(input[type="radio"]:checked) {
+  border-color: var(--brand-light);
+}
+
+.theme-card:hover {
+  border-color: var(--shape-hover);
+}
