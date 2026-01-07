@@ -229,7 +229,7 @@
                 <img src="./assets/img/Image-11.png" alt="Outro" />
                 <span>Outro</span>
               </label>
-              </div>
+            </div>
           </div>
 
           <div class="style-cover-container">
@@ -241,7 +241,7 @@
                 <label class="toggle-label" for="event-style">
                   <input type="checkbox" id="event-style" name="event-style" />
                   <span class="toggle-slider"></span>
-                  <span class="toggle-text">Escuro</span>
+                  <span class="toggle-text" data-off="Escuro" data-on="Claro"></span>
                 </label>
               </div>
             </div>
@@ -264,6 +264,69 @@
               </div>
             </div>
           </div>
+
+          <fieldset class="contact-data">
+            <legend class="contact-data">
+              <img src="./assets/icons/contact.svg" alt="Icone de contato" class="icon" />
+              Dados para contato
+            </legend>
+
+            <div class="input-wrapper">
+              <label for="event-title">Nome</label>
+              <input type="text" id="event-title" name="event-title" placeholder="Nome completo" />
+            </div>
+
+            <div class="contact-row">
+              <div class="input-wrapper">
+                <label for="contact-email">E-mail</label>
+                <input type="email" id="contact-email" name="contact-email" placeholder="exemplo@email.com" />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="contact-phone">Telefone</label>
+                <input type="text" id="contact-phone" name="contact-phone" placeholder="(99) 99999-9999" />
+              </div>
+            </div>
+
+          </fieldset>
+
+          <hr class="divider" />
+
+          <footer class="form-footer">
+
+            <div class="terms-wrapper">
+              <label class="checkbox-label">
+                <input type="checkbox" id="terms" name="terms" required />
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">
+                  Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de
+                    Privacidade</a>
+                </span>
+              </label>
+
+              <label class="checkbox-label">
+                <input type="checkbox" id="email-updates" name="email-updates" />
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">
+                  Aceito receber atualizações e promoções por e-mail
+                </span>
+              </label>
+
+              <label class="checkbox-label">
+                <input type="checkbox" id="sms-updates" name="sms-updates" />
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">
+                  Aceito receber atualizações e promoções por SMS
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="submit-button">
+              <img src="./assets/icons/ticket.svg" alt="Icone de ingresso" />
+              Gerar convite
+            </button>
+          </footer>
+
 
         </fieldset>
       </form>

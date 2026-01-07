@@ -21,7 +21,7 @@
   cursor: pointer;
   font: var(--body-md);
   transition: background-color 0.2s;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
   white-space: nowrap;
 }
 

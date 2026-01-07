@@ -1,0 +1,13 @@
+.contact-data {
+  margin-top: 48px;
+}
+
+.contact-row {
+  display: flex;
+  gap: 16px;
+}
+
+.contact-row .input-wrapper {
+  flex: 1;
+}
+

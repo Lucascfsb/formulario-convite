@@ -5,10 +5,6 @@
   width: fit-content;
 }
 
-.SwitchToggle > label.event-colors {
-  margin-bottom: 12px;
-}
-
 .toggle-label {
   display: flex;
   align-items: center;
@@ -22,6 +18,7 @@
   display: none;
 }
 
+/* Estado OFF - cinza */
 .toggle-slider {
   position: relative;
   width: 64px;
@@ -29,7 +26,7 @@
   background-color: var(--shape-button);
   border: 1px solid var(--input-stroke);
   border-radius: 24px;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   flex-shrink: 0;
 }
 
@@ -45,6 +42,7 @@
   transition: left 0.3s ease;
 }
 
+/* Estado ON - azul */
 .toggle-label input[type="checkbox"]:checked + .toggle-slider {
   background-color: var(--brand-light);
   border-color: var(--brand-light);
@@ -52,15 +50,32 @@
 
 .toggle-label input[type="checkbox"]:checked + .toggle-slider::before {
   left: 34px;
-}
-
-.SwitchToggle .toggle-label > label.event-colors {
-  margin-bottom: 0;
-  font: var(--body-sm);
-  color: var(--text-body);
+  background-color: white;
 }
 
 .toggle-text {
   font: var(--body-sm);
+  color: var(--text-body);
+  transition: color 0.2s;
+}
+
+.toggle-text::before {
+  content: attr(data-off);
+}
+
+.toggle-label input[type="checkbox"]:checked ~ .toggle-text {
   color: var(--text-heading);
+}
+
+.toggle-label:hover .toggle-slider {
+  border-color: var(--brand-light);
+}
+
+.toggle-label input[type="checkbox"]:checked ~ .toggle-text::before {
+  content: attr(data-on);
+}
+
+.toggle-label input[type="checkbox"]:disabled + .toggle-slider {
+  opacity: 0.5;
+  cursor: not-allowed;
 }

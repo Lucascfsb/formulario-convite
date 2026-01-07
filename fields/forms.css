@@ -79,3 +79,42 @@ textarea {
   background-color: var(--input-base);
   color: var(--input-placeholder);
 }
+
+/* Estados dos inputs */
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--brand-light);
+  box-shadow: 0 0 0 2px rgba(89, 178, 255, 0.2);
+}
+
+input:invalid:not(:placeholder-shown),
+textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--feedback-error);
+}
+
+.input-wrapper input:invalid:not(:placeholder-shown) ~ .error-message,
+.input-wrapper textarea:invalid:not(:placeholder-shown) ~ .error-message {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 8px;
+  font: var(--body-sm);
+  color: var(--feedback-error);
+}
+
+.error-message {
+  display: none;
+}
+
+.error-message::before {
+  content: '⚠';
+  font-size: 14px;
+}
+
+input:disabled,
+textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: var(--shape-disabled);
+}
