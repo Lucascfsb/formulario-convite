@@ -1,0 +1,66 @@
+.SwitchToggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: fit-content;
+}
+
+.SwitchToggle > label.event-colors {
+  margin-bottom: 12px;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  width: auto;
+  height: auto;
+}
+
+.toggle-label input[type="checkbox"] {
+  display: none;
+}
+
+.toggle-slider {
+  position: relative;
+  width: 64px;
+  height: 32px;
+  background-color: var(--shape-button);
+  border: 1px solid var(--input-stroke);
+  border-radius: 24px;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.toggle-slider::before {
+  content: '';
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background-color: var(--input-base);
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
+  transition: left 0.3s ease;
+}
+
+.toggle-label input[type="checkbox"]:checked + .toggle-slider {
+  background-color: var(--brand-light);
+  border-color: var(--brand-light);
+}
+
+.toggle-label input[type="checkbox"]:checked + .toggle-slider::before {
+  left: 34px;
+}
+
+.SwitchToggle .toggle-label > label.event-colors {
+  margin-bottom: 0;
+  font: var(--body-sm);
+  color: var(--text-body);
+}
+
+.toggle-text {
+  font: var(--body-sm);
+  color: var(--text-heading);
+}

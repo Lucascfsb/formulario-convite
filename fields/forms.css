@@ -1,0 +1,81 @@
+input, textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+
+  font: var(--body-md);
+  padding: 16px;
+
+  background-color: var(--input-base);
+  color: var(--input-placeholder);
+}
+
+input::placeholder,
+textarea::placeholder,
+input[type="date"]::placeholder {
+  color: var(--input-placeholder);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type="date"] {
+  position: relative;
+}
+
+label {
+  font: var(--body-sm);
+  color: var(--text-body);
+
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+legend { 
+  font: var(--heading-sm);  
+  color: var(--text-heading);    
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 26px;
+}
+
+legend img {
+  width: 24px;
+  height: 24px;
+  padding: 1px;
+  flex-shrink: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+.input-wrapper {
+  margin-bottom: 16px;
+}
+
+.input-wrapper label {
+  margin-bottom: 8px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+textarea {
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-stroke);
+  padding: 16px;
+  min-height: 120px;
+  resize: vertical;
+  font: var(--body-md);
+  background-color: var(--input-base);
+  color: var(--input-placeholder);
+}

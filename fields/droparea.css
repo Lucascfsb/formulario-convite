@@ -1,0 +1,41 @@
+.FileInput {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border: none;
+  border-radius: 8px;
+}
+
+.FileInput input[type="file"] {
+  display: none;
+}
+
+.file-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background-color: var(--shape-button);
+  color: var(--text-heading);
+  border-radius: 8px;
+  cursor: pointer;
+  font: var(--body-md);
+  transition: background-color 0.2s;
+  margin-bottom: 0 !important;
+  white-space: nowrap;
+}
+
+.file-label:hover {
+  background-color: var(--brand-dark);
+}
+
+.file-label svg {
+  width: 20px;
+  height: 20px;
+}
+
+.file-name {
+  font: var(--body-sm);
+  color: var(--text-body);
+  flex: 1;
+}
